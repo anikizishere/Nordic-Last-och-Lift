@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakta oss</title>
+</head>
+<body>
+    <div style="background-color:gainsboro; margin: 40px; padding:20px">
+        <img src="images/office.jpg" width="1000" >
+        <br>  
+        <a href="index.html">Start</a>
+        <a href="products.html">Våra produkter</a>
+        <a href="media.html">Media</a> 
+        <a href="staff.html">Personal</a>       
+        <a href="contact.html">Kontakta oss</a>       
+        
+        <h1>Kontakta oss</h1>
+        <form action="http://primat.se/services/sendform.aspx?xid=register&xmail=test@abc.se" method="post">
+            <label for="namn">För-och efternamn: </label>
+            <input type="text" id="namn" name="namn"><br>
+            <label for="adress">Adress: </label>
+            <input type="text" id="adress" name="adress"><br>
+            <label for="email">E-post: </label>
+            <input type="email" id="email" name="email"><br>
+            <label for="number">Telefonnummer: </label>
+            <input type="number" id="number" name="number"><br><br>
+            
+            <input type="radio" name="privateorcompany" id="privat" value="privat">
+            <label for="privat">Privat: </label><br>
+            <input type ="radio" name="privateorcompany" id="company" value="company">
+            <label for="company">Företag:</label><br><br>            
+            
+            <input type="radio" name="size" id="100" value="100">
+            <label for="100">1-100</label><br>        
+            <input type ="radio" name="size" id="101" value="101">
+            <label for="101">101-1000</label><br>         
+            <input type="radio" name="size" id="1000" value="1000">
+            <label for="1000">Fler än 1000</label><br><br>        
+        
+            <label for="info">Skriv meddelande till Nordic Last & Lift:</label><br>        
+            <textarea id="info" rows="5" cols="80" name="info"></textarea><br><br>
+            
+            <input type="checkbox" id="newsletter1" name="newsletter2" value="ja">
+            <label for="newsletter1">Vill du ha nyhetsbrev från oss?</label><br>
+            <input type="hidden" name="newsletter2" value="nej">
+            <input type="checkbox" id="contactbyphone1" name="contactbyphone2" value="ja">
+            <label for="contactbyphone1">Vill du bli kontaktad på telefon?</label><br>
+            <input type="hidden" name="contactbyphone2" value="nej"> <br><br>       
+            <input type="submit" value="Skicka">       
+        </form>
+        <iframe src="attachedcontact.html" style="border: none"></iframe>
+    </div>
+</body>
+</html>
